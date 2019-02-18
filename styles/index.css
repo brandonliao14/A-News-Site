@@ -32,6 +32,12 @@ a:hover {
   /* background-color: rgba(156, 110, 255, .1); */
 }
 
+.advertisement {
+  position: sticky;
+  min-height: calc(90vh - 56px);
+  top:56px;
+}
+
 .light_gray_bg{
   background-color: #E9ECEF;
 }
