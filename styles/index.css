@@ -25,6 +25,7 @@ a {
 a:hover {
   color:inherit;
   cursor:pointer;
+  text-decoration: none;
 }
 
 .home_jumbotron span{
@@ -68,6 +69,10 @@ a:hover {
   left: 15px;
   padding: 10px 15px 10px 10px;
   background-color: rgba(0,0,0,.5);
+  color: rgba(255,255,255,.9);
+}
+
+a.img_overlay:hover{
   color: rgba(255,255,255,.9);
 }
 
