@@ -54,6 +54,7 @@ a:hover {
 .main_body .entry {
   background-color: #E9ECEF;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .main_body .main_body_content img{
@@ -79,6 +80,10 @@ a.img_overlay:hover{
 .main_body .main_body_content .entry .entry_sub_news_feed{
   max-height: inherit;
   overflow-y: auto;
+}
+
+.main_body .main_body_content .entry .entry_sub_news_feed .col-12:not(:first-child){
+  margin-top: 7px;
 }
 
 .main_body .main_body_content .entry .news_title{
@@ -117,14 +122,14 @@ a.img_overlay:hover{
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body{
-    font-size: 110%;
+    font-size: 105%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body{
-    font-size: 120%;
+    font-size: 107%;
   }
 }
 
