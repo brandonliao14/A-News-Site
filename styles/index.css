@@ -60,21 +60,25 @@ a:hover {
 .main_body .main_body_content img{
   position: relative;
   width:inherit;
-  height: inherit;
+  height: 100%;
 }
 
 .img_overlay {
-  position: absolute;
-  width: calc(100% - 30px);
-  top: 60%;
-  left: 15px;
-  padding: 10px 15px 10px 10px;
-  background-color: rgba(0,0,0,.5);
+  position: relative;
+  height: 100%;
+  top: -100px;
+  padding: 10px 20px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1));
   color: rgba(255,255,255,.9);
 }
 
 a.img_overlay:hover{
   color: rgba(255,255,255,.9);
+}
+
+.main_body .entry_sub_main_photo {
+  overflow: hidden;
+  max-height: 100%;
 }
 
 .main_body .main_body_content .entry .entry_sub_news_feed{
