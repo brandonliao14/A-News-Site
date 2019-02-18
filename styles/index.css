@@ -24,12 +24,11 @@ body{
 
 .main_body .main_body_content img{
   width: 100%;
-  height: inherit;
+  height: auto;
 }
 
 .main_body .main_body_content .entry{
   max-height: 220px;
-  overflow: hidden;
 }
 
 .main_body .main_body_content .entry .entry_sub_news_feed{
