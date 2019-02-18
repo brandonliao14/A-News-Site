@@ -36,3 +36,7 @@ body{
   max-height: inherit;
   overflow-y: auto;
 }
+
+.main_body .main_body_content .entry .news_title{
+  font-weight: bold;
+}
