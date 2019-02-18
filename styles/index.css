@@ -32,6 +32,10 @@ a:hover {
   /* background-color: rgba(156, 110, 255, .1); */
 }
 
+.main_body .news_category {
+  margin-bottom: 10px;
+}
+
 .main_body .main_body_content img{
   width: 100%;
   height: auto;
