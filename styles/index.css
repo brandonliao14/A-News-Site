@@ -41,10 +41,6 @@ a:hover {
   height: auto;
 }
 
-.main_body .main_body_content .entry{
-  max-height: 220px;
-}
-
 .main_body .main_body_content .entry .entry_sub_news_feed{
   max-height: inherit;
   overflow-y: auto;
