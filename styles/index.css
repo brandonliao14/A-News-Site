@@ -21,3 +21,18 @@ body{
   margin: 0 30px;
   /* background-color: rgba(156, 110, 255, .1); */
 }
+
+.main_body .main_body_content img{
+  width: 100%;
+  height: inherit;
+}
+
+.main_body .main_body_content .entry{
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.main_body .main_body_content .entry .entry_sub_news_feed{
+  max-height: inherit;
+  overflow-y: auto;
+}
