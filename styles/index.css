@@ -34,9 +34,14 @@ body{
 
 .main_body .main_body_content .entry .entry_sub_news_feed{
   max-height: inherit;
+  font-size: .85em;
   overflow-y: auto;
 }
 
-.main_body .main_body_content .entry .news_title{
+.main_body .main_body_content .entry .entry_sub_news_feed .news_title{
   font-weight: bold;
+}
+
+.main_body .main_body_content .entry .entry_sub_news_feed .news_date{
+  font-style: italic;
 }
