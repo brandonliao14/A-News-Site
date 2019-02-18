@@ -65,16 +65,16 @@ a:hover {
   overflow-y: auto;
 }
 
-.main_body .main_body_content .entry .entry_sub_news_feed .news_title{
+.main_body .main_body_content .entry .news_title{
   font-weight: bold;
 }
 
-.main_body .main_body_content .entry .entry_sub_news_feed .news_date{
+.main_body .main_body_content .entry .news_date{
   color: gray;
   font-style: italic;
 }
 
-.main_body .main_body_content .entry .entry_sub_news_feed .news_author{
+.main_body .main_body_content .entry .news_author{
   color: gray;
 }
 
