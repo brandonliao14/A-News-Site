@@ -11,3 +11,7 @@ main .home_jumbotron span{
   position: absolute;
   bottom: 10%;
 }
+
+body{
+  font-family: 'Arvo', serif;
+}
