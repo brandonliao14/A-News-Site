@@ -33,7 +33,6 @@ body{
 
 .main_body .main_body_content .entry .entry_sub_news_feed{
   max-height: inherit;
-  font-size: .85em;
   overflow-y: auto;
 }
 
@@ -46,20 +45,29 @@ body{
 }
 
 @media (min-width: 576px) {
+  body{
+    font-size: 90%;
+  }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  body{
+    font-size: 100%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  body{
+    font-size: 110%;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  
+  body{
+    font-size: 120%;
+  }
 }
