@@ -42,6 +42,10 @@ a:hover {
   background-color: #E9ECEF;
 }
 
+.main_body{
+  padding: 15px 30px;
+}
+
 .main_body .news_category {
   margin-bottom: 10px;
 }
