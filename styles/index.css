@@ -111,3 +111,14 @@ a:hover {
     font-size: 120%;
   }
 }
+
+@media (max-width: 575px) {
+  .main_body{
+    padding: 15px 0px;
+  }
+
+  .main_body .entry {
+    background-color: #E9ECEF;
+    padding: 10px 5px;
+  }
+}
