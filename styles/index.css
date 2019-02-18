@@ -56,8 +56,19 @@ a:hover {
 }
 
 .main_body .main_body_content img{
-  width: 100%;
-  height: auto;
+  position: relative;
+  width:inherit;
+  height: inherit;
+}
+
+.img_overlay {
+  position: absolute;
+  width: calc(100% - 30px);
+  top: 60%;
+  left: 15px;
+  padding: 10px 15px 10px 10px;
+  background-color: rgba(0,0,0,.5);
+  color: rgba(255,255,255,.9);
 }
 
 .main_body .main_body_content .entry .entry_sub_news_feed{
