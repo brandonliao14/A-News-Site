@@ -43,7 +43,7 @@ a:hover {
 }
 
 .main_body{
-  padding: 15px 30px;
+  padding: 15px 20px;
 }
 
 .main_body .news_category {
@@ -87,6 +87,12 @@ a:hover {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body{
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 830px) {
   body{
     font-size: 100%;
   }
