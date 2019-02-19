@@ -1,8 +1,14 @@
 function main()
 {
   console.log('main.js script is loaded');
-  let main_body_content = document.getElementsByClassName('main_body_content')[0];
-  main_body_content.innerHTML = groupNewsFeed(getNewsFeed(),'Finance',3);
+  // let main_body_content = document.getElementsByClassName('main_body_content')[0];
+  // main_body_content.innerHTML = groupNewsFeed(getNewsFeed(),'Finance',3) +
+  // groupNewsFeed(getNewsFeed(),'Finance',4) +
+  // groupNewsFeed(getNewsFeed(),'Finance',2) +
+  // groupNewsFeed(getNewsFeed(),'Finance',3) +
+  // groupNewsFeed(getNewsFeed(),'Finance',4) +
+  // groupNewsFeed(getNewsFeed(),'Finance',2)
+  // ;
 
 }
 if (document.addEventListener) document.addEventListener("DOMContentLoaded", main, false);
@@ -15,22 +21,24 @@ function groupNewsFeed(list_of_news,category,number_of_entries){
     entries += templateNewsEntry(list_of_news[i]);
   }
   return `
-    <div class="row entry">
-      <div class="col-12 news_category">
-        <a class="h5 text-uppercase" href="/html/${category.toLowerCase()}.html">${category}</a>
-        <a class="float-right text-uppercase" href="/html/${category.toLowerCase()}.html">View All</a>
+      <div class="col-12 col-sm-6 col-lg-4 col-md-6">
+        <div class="entry">
+          <div class="news_category">
+            <a class="h5 text-uppercase" href="/html/${category.toLowerCase()}.html">${category}</a>
+            <a class="float-right text-uppercase" href="/html/${category.toLowerCase()}.html">View All</a>
+          </div>
+          ${templateCategoryImage(list_of_news[0])}
+          <div class="row entry_sub_news_feed">
+            ${entries}
+          </div>
+        </div>
       </div>
-      ${templateCategoryImage(list_of_news[0])}
-      <div class="row col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_news_feed">
-        ${entries}
-      </div>
-    </div>
   `
 }
 
 function templateCategoryImage(news){
   return `
-    <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
+    <div class="entry_sub_main_photo">
       <img src="${news.image}">
       <div class="img_overlay">
         <a href="${news.link}" class="h5">${news.title}</a>
@@ -42,7 +50,7 @@ function templateCategoryImage(news){
 
 function templateNewsEntry(news){
   return `
-    <div class="col-12">
+    <div class="">
       <div class="news_title"><a href="${news.link}">${news.title}</a></div>
       <span class="news_author">${news.author ? news.author + " - " : '' }</span><span class="news_date">${news.date}</span>
     </div>

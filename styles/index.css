@@ -48,25 +48,27 @@ a:hover {
 }
 
 .main_body .news_category {
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .main_body .entry {
-  background-color: #E9ECEF;
+  /* background-color: #E9ECEF; */
+  border: 1px solid gray;
   padding: 20px;
-  margin-bottom: 20px;
+  min-height: 100px;
+  margin: 10px;
 }
 
 .main_body .main_body_content img{
   position: relative;
-  width:inherit;
-  height: 100%;
+  width:100%;
+  height: auto;
 }
 
 .img_overlay {
   position: relative;
   height: 100%;
-  top: -100px;
+  top: -100%;
   padding: 10px 20px;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1));
   color: rgba(255,255,255,.9);
