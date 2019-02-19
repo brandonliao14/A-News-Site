@@ -43,6 +43,26 @@ function autorun()
       source: "CapitalWatch",
     },
   ]
+
+  function templateCategoryImage(news){
+    return `
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
+        <img src="${news.image}">
+        <div class="img_overlay"><a href="${news.link}" class="h5">news.title</a></div>
+        <span>${news.author || ''} - ${news.date}</span>
+      </div>
+    `;
+  }
+
+  function templateNewsEntry(news){
+    return `
+      <div class="col-12">
+        <div class="news_title"><a href="${news.link}">${news.title}</a></div>
+        <span class="news_author">By: ${news.author}</span>. <span class="news_date">${news.date}</span>
+      </div>
+    `;
+  }
+
 }
 if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
 else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
