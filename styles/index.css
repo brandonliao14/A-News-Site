@@ -53,10 +53,22 @@ a:hover {
 
 .main_body .entry {
   /* background-color: #E9ECEF; */
-  border: 1px solid gray;
+  border: 3px solid gray;
   padding: 20px;
   min-height: 100px;
   margin: 10px;
+}
+
+.main_col_1 .entry {
+  border-color: red;
+}
+
+.main_col_2 .entry {
+  border-color: green;
+}
+
+.main_col_3 .entry {
+  border-color: blue;
 }
 
 .main_body .main_body_content img{
