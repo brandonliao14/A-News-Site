@@ -1,6 +1,8 @@
 function main()
 {
   console.log('main.js script is loaded');
+  let main_body_content = document.getElementsByClassName('main_body_content')[0];
+  main_body_content.innerHTML = groupNewsFeed(getNewsFeed(),'Finance',3);
 
 }
 if (document.addEventListener) document.addEventListener("DOMContentLoaded", main, false);
@@ -32,7 +34,7 @@ function templateCategoryImage(news){
   return `
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
       <img src="${news.image}">
-      <div class="img_overlay"><a href="${news.link}" class="h5">news.title</a></div>
+      <div class="img_overlay"><a href="${news.link}" class="h5">${news.title}</a></div>
       <span>${news.author || ''} - ${news.date}</span>
     </div>
   `;
