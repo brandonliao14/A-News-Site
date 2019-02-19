@@ -52,11 +52,11 @@ a:hover {
 }
 
 .main_body .entry {
-  /* background-color: #E9ECEF; */
-  border: 3px solid gray;
+  background-color: #E9ECEF;
+  border-top: 1px solid;
   padding: 20px;
   min-height: 100px;
-  margin: 10px;
+  margin: 15px 0px;
 }
 
 .main_col_1 .entry {
