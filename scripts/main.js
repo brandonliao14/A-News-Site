@@ -7,6 +7,27 @@ if (document.addEventListener) document.addEventListener("DOMContentLoaded", mai
 else if (document.attachEvent) document.attachEvent("onreadystatechange", main);
 else window.onload = main;
 
+function groupNewsFeed(list_of_news,category,number_of_entries){
+  let entries = "";
+  for(var i =1; i <=number_of_entries; i++){
+    entries += templateNewsEntry(list_of_news[i]);
+  }
+  return `
+    <div class="row entry">
+      <div class="col-12 news_category">
+        <a class="h5 text-uppercase" href="/html/${category.toLowerCase()}.html">${category}</a>
+        <a class="float-right text-uppercase" href="/html/${category.toLowerCase()}.html">View All</a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
+        ${templateCategoryImage(list_of_news[0])}
+      </div>
+      <div class="row col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_news_feed">
+        ${entries}
+      </div>
+    </div>
+  `
+}
+
 function templateCategoryImage(news){
   return `
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
@@ -21,7 +42,7 @@ function templateNewsEntry(news){
   return `
     <div class="col-12">
       <div class="news_title"><a href="${news.link}">${news.title}</a></div>
-      <span class="news_author">By: ${news.author}</span>. <span class="news_date">${news.date}</span>
+      <span class="news_author">${news.author ? news.author + " - " : '' }</span><span class="news_date">${news.date}</span>
     </div>
   `;
 }
