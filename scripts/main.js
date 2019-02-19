@@ -20,9 +20,7 @@ function groupNewsFeed(list_of_news,category,number_of_entries){
         <a class="h5 text-uppercase" href="/html/${category.toLowerCase()}.html">${category}</a>
         <a class="float-right text-uppercase" href="/html/${category.toLowerCase()}.html">View All</a>
       </div>
-      <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
-        ${templateCategoryImage(list_of_news[0])}
-      </div>
+      ${templateCategoryImage(list_of_news[0])}
       <div class="row col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_news_feed">
         ${entries}
       </div>
@@ -34,8 +32,10 @@ function templateCategoryImage(news){
   return `
     <div class="col-12 col-sm-6 col-md-6 col-lg-6 entry_sub_main_photo">
       <img src="${news.image}">
-      <div class="img_overlay"><a href="${news.link}" class="h5">${news.title}</a></div>
-      <span>${news.author || ''} - ${news.date}</span>
+      <div class="img_overlay">
+        <a href="${news.link}" class="h5">${news.title}</a>
+        <span>${news.author || ''} - ${news.date}</span>
+      </div>
     </div>
   `;
 }
@@ -52,20 +52,20 @@ function templateNewsEntry(news){
 function getNewsFeed(){
   return  [
       {
-        title: 'As Wall Street rallies on US-China trade hopes, bond investors may be worried about a recession',
-        author: 'Patti Domm',
-        date: '12:02 PM ET Sun, 17 Feb 2019',
-        link: 'https://www.cnbc.com/2019/02/17/stocks-rally-on-us-china-trade-deal-but-bond-investors-fear-recession.html',
-        image: `https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/07/11/103779191-GettyImages-173274410.530x298.jpg?v=1544219696`,
-        source: "CNBC",
-      },
-      {
         title: "Singapore’s January exports to China collapsed in ‘very worrying’ development for both economies",
         author: 'Finbarr Bermingham',
         date: 'Monday, 18 Feb, 2019 10:14pm',
         link: 'https://www.scmp.com/economy/china-economy/article/2186592/singapores-january-exports-china-collapsed-very-worrying',
         image: `https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2019/02/18/b30e4f06-3334-11e9-b09f-892c410303c7_image_hires_160852.jpg?itok=1N8NzuhB`,
         source: "South China Morning Post",
+      },
+      {
+        title: 'As Wall Street rallies on US-China trade hopes, bond investors may be worried about a recession',
+        author: 'Patti Domm',
+        date: '12:02 PM ET Sun, 17 Feb 2019',
+        link: 'https://www.cnbc.com/2019/02/17/stocks-rally-on-us-china-trade-deal-but-bond-investors-fear-recession.html',
+        image: `https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/07/11/103779191-GettyImages-173274410.530x298.jpg?v=1544219696`,
+        source: "CNBC",
       },
       {
         title: 'Will the US and China finally agree a trade deal?',
