@@ -1,11 +1,11 @@
-function autorun()
+function main()
 {
-  console.log('script is loaded');
+  console.log('main.js script is loaded');
 
 }
-if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);
-else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
-else window.onload = autorun;
+if (document.addEventListener) document.addEventListener("DOMContentLoaded", main, false);
+else if (document.attachEvent) document.attachEvent("onreadystatechange", main);
+else window.onload = main;
 
 function templateCategoryImage(news){
   return `
