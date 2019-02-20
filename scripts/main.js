@@ -59,7 +59,7 @@ function templateNewsEntry(news, category){
     <div class="card">
       <div class="card-body">
       <h5 class="card-title">${category}</h5>
-      <a href="${news.link}">
+      <a href="${news.link}" target="_blank">
         <div class="img_wrapper">
           <img src="${news.image}" alt="${news.title}">
           <div class="shadow_overlay">
@@ -69,8 +69,9 @@ function templateNewsEntry(news, category){
           </div>
         </div>
       </a>
-        <p class="card-text"><small class="text-muted">${news.author ? news.author + " - " : ""}${news.date}</small>
+        <p class="card-text">
           <small class="font-weight-bold">${news.source}</small>
+          <small class="text-muted">${news.author ? news.author + " - " : ""}${news.date}</small>
         </p>
       </div>
     </div>
