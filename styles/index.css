@@ -11,7 +11,12 @@ main .home_jumbotron{
   background-image: url('https://img.capitalwatch.com/201902/14/5c660a7300f12.JPG');
   background-position: top;
   background-size: cover;
-  text-shadow: 3px 3px 3px black;
+}
+
+main .home_jumbotron .jumbotron_wrapper>:first-child>:first-child{
+  text-shadow: 3px 3px 5px black;
+  letter-spacing: 3px;
+  line-height: 65px;
 }
 
 main .home_jumbotron .jumbotron_wrapper{
