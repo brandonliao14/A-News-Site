@@ -1,8 +1,14 @@
 function main()
 {
   console.log('main.js script is loaded');
-  // let main_body_content = document.getElementsByClassName('main_body_content')[0];
-  // main_body_content.innerHTML = groupNewsFeed(getNewsFeed(),'Finance',3) +
+  let main_body_content = document.getElementsByClassName('main_body_content')[0];
+  main_body_content.innerHTML = templateNewsEntry(getNewsFeed()[0],'Finance') +
+  templateNewsEntry(getNewsFeed()[1],'Finance') +
+  templateNewsEntry(getNewsFeed()[2],'Finance')+
+  templateNewsEntry(getNewsFeed()[3],'Finance') +
+  templateNewsEntry(getNewsFeed()[1],'Finance') +
+  templateNewsEntry(getNewsFeed()[4],'Finance')+
+  templateNewsEntry(getNewsFeed()[2],'Finance')
   // groupNewsFeed(getNewsFeed(),'Finance',4) +
   // groupNewsFeed(getNewsFeed(),'Finance',2) +
   // groupNewsFeed(getNewsFeed(),'Finance',3) +
@@ -48,11 +54,25 @@ function templateCategoryImage(news){
   `;
 }
 
-function templateNewsEntry(news){
+function templateNewsEntry(news, category){
   return `
-    <div class="">
-      <div class="news_title"><a href="${news.link}">${news.title}</a></div>
-      <span class="news_author">${news.author ? news.author + " - " : '' }</span><span class="news_date">${news.date}</span>
+    <div class="card">
+      <div class="card-body">
+      <h5 class="card-title">${category}</h5>
+      <a href="${news.link}">
+        <div class="img_wrapper">
+          <img src="${news.image}" alt="${news.title}">
+          <div class="shadow_overlay">
+            <div>
+              <span>${news.title}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+        <p class="card-text"><small class="text-muted">${news.author ? news.author + " - " : ""}${news.date}</small>
+          <small class="font-weight-bold">${news.source}</small>
+        </p>
+      </div>
     </div>
   `;
 }
