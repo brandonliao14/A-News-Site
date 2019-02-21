@@ -35,7 +35,7 @@ main .home_jumbotron .jumbotron_wrapper{
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 20px;
 }
 
 .navbar .navbar-brand{
@@ -87,6 +87,10 @@ a:hover {
   padding: 20px;
   min-height: 100px;
   margin: 15px 0px;
+}
+
+.main_body .main_body_content{
+  padding: 30px;
 }
 
 .main_body_content .news_feed:hover{
@@ -243,5 +247,9 @@ a.img_overlay:hover{
 
   main .home_jumbotron .jumbotron_wrapper{
     padding: 0px 10px;
+  }
+
+  .main_body .main_body_content{
+    padding: 0px;
   }
 }
