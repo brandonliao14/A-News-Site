@@ -27,7 +27,13 @@ function main()
   let promise = readJSON(path);
   promise.then(function(news_feed){
     let main_body_content = document.getElementsByClassName('main_body_content')[0];
-    main_body_content.innerHTML = groupNewsFeed(news_feed.finance, "finance",3)
+    main_body_content.innerHTML =
+      groupNewsFeed(news_feed.finance, "finance",3) +
+      groupNewsFeed(news_feed.finance, "finance",4) +
+      groupNewsFeed(news_feed.finance, "finance",2) +
+      groupNewsFeed(news_feed.finance, "finance",4) +
+      groupNewsFeed(news_feed.finance, "finance",3) +
+      groupNewsFeed(news_feed.finance, "finance",2)
   }).then().catch(function(err){
     console.log(err);
   })
@@ -54,7 +60,11 @@ function groupNewsFeed(list_of_news,category,number_of_entries){
 
 function templateCategoryHeadLine(news,category){
   return `
-    <h5 class="card-title text-capitalize">${category}</h5>
+    <a href="../html/${category}.html" class="text-uppercase">
+      <div class="card-title">
+        ${category}
+      </div>
+    </a>
     <a href="${news.link}" target="_blank">
       <div class="img_wrapper">
         <img src="${news.image}" alt="${news.title}">
