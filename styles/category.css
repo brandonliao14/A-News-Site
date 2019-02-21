@@ -1,6 +1,21 @@
+main{
+  margin-top: 56px;
+}
+
 body{
   background-color: #E9ECEF;
   font-family: 'Arvo', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color:inherit;
+  cursor:pointer;
+  text-decoration: none;
 }
 
 .nav-link{
@@ -18,6 +33,17 @@ body{
 
 .navbar .navbar-brand{
   padding: 13px 16px;
+}
+
+.main_body_content img{
+  position: relative;
+  width:100%;
+  height: inherit;
+}
+
+.main_body_content .news_entry{
+  /* padding: 20px; */
+  margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
