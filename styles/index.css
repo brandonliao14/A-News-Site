@@ -25,6 +25,23 @@ main .home_jumbotron .jumbotron_wrapper{
   bottom: 10%;
 }
 
+.nav-link{
+  color: black !important;
+  line-height: 40px;
+}
+
+.nav-item:hover{
+  background-color: #efefef !important;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar .navbar-brand{
+  padding: 13px 16px;
+}
+
 body{
   background-color: #E9ECEF;
   font-family: 'Arvo', serif;
