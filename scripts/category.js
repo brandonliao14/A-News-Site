@@ -8,7 +8,6 @@ function autorun()
   promise.then(function(data){
     console.log(data);
     let main_body_content = document.getElementsByClassName('main_body_content')[0];
-    console.log(templateContents(data[category],category));
     main_body_content.innerHTML = templateContents(data[category],category);
   }).then().catch(function(err){
     console.log(err);
@@ -35,9 +34,7 @@ function templateContents(list_of_news,category){
         </div>
       </div>
     `;
-    console.log(entries);
   }
-  console.log(entries);
   return `
     <div>
       <h4 class="text-capitalize">${category}</h4>
