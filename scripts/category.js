@@ -25,8 +25,8 @@ function templateContents(list_of_news,category){
     entries +=
     `
       <div class="row">
-        <a href="${curr_news.link} class="font-weight-bold">
-          <div class="news_entry col-lg-10 offset-lg-1">
+        <div class="news_entry col-lg-10 offset-lg-1">
+          <a href="${curr_news.link}" target="_blank" class="font-weight-bold">
             <div class="row">
               <div class="col-12 col-sm-5 col-md-4 col-lg-4">
                 <img src="${curr_news.image}" alt="Broken Image">
@@ -39,8 +39,8 @@ function templateContents(list_of_news,category){
                 </p>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     `;
   }
