@@ -24,20 +24,26 @@ function templateContents(list_of_news,category){
     curr_news = list_of_news[i];
     entries +=
     `
-      <div class="row news_entry">
-        <div class="col-12 col-sm-3 col-md-4 col-lg-4">
-          <img src="${curr_news.image}" alt="Broken Image">
-        </div>
-        <div class="col-12 col-sm-9 col-md-8 col-lg-8">
-          <a href="${curr_news.link} class="font-weight-bold">${curr_news.title}</a>
-          <p class="text-muted">${curr_news.author ? curr_news.author + " - " : "" } ${curr_news.date}</p>
+      <div class="row">
+        <div class="news_entry col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+              <img src="${curr_news.image}" alt="Broken Image">
+            </div>
+            <div class="col-12 col-sm-7 col-md-8 col-lg-8">
+              <a href="${curr_news.link} class="font-weight-bold">
+                <div class="news_title">${curr_news.title}</div>
+              </a>
+              <p class="text-muted">${curr_news.author ? curr_news.author + " - " : "" } ${curr_news.date}</p>
+            </div>
+          </div>
         </div>
       </div>
     `;
   }
   return `
     <div>
-      <h4 class="text-capitalize">${category}</h4>
+      <h2 class="text-uppercase m-3 p-3">${category}</h4>
       ${entries}
     </div>
   `

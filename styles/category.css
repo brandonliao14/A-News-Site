@@ -42,8 +42,13 @@ a:hover {
 }
 
 .main_body_content .news_entry{
-  /* padding: 20px; */
+  padding: 20px;
   margin-bottom: 20px;
+  background-color: white;
+}
+
+.main_body_content .news_title{
+  font-size: 1.6em;
 }
 
 @media (min-width: 576px) {
