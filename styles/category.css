@@ -35,6 +35,10 @@ a:hover {
   padding: 13px 16px;
 }
 
+.main_body_content{
+  margin-bottom: 30px;
+}
+
 .main_body_content img{
   position: relative;
   width:100%;
@@ -43,12 +47,12 @@ a:hover {
 
 .main_body_content .news_entry{
   padding: 20px;
-  margin-bottom: 20px;
   background-color: white;
-  border: 1px solid transparent;
+  border: 1px solid #e0dede;
 }
 
 .main_body_content .news_entry:hover{
+  z-index: 1;
   box-shadow: 1px 1px 10px 1px gray;
 }
 

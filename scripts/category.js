@@ -47,7 +47,7 @@ function templateContents(list_of_news,category){
   return `
     <div>
       <div class="row">
-        <div class="col-lg-10 offset-lg-1 px-0 bg-white my-4">
+        <div class="col-lg-10 offset-lg-1 px-3 border bg-white mt-4">
           <div class="h4 my-0 text-uppercase py-4 text_shadow_wht">${category}</div>
         </div>
       </div>
