@@ -56,6 +56,10 @@ a:hover {
   font-size: 1.3em;
 }
 
+.text_shadow_wht{
+  text-shadow: 2px 2px 1px white;
+}
+
 @media (min-width: 576px) {
   body{
     font-size: 90%;
