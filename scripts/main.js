@@ -75,10 +75,10 @@ function templateCategoryHeadLine(news,category){
         </div>
       </div>
     </a>
-    <p class="card-text">
+    <span class="card-text">
     <small class="">(${news.source})</small>
     <small class="text-muted font-italic">${news.author ? news.author + " - " : ""}${news.date}</small>
-    </p>
+    </span>
   `;
 }
 
