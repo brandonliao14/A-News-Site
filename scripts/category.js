@@ -25,19 +25,22 @@ function templateContents(list_of_news,category){
     entries +=
     `
       <div class="row">
-        <div class="news_entry col-lg-10 offset-lg-1">
-          <div class="row">
-            <div class="col-12 col-sm-5 col-md-4 col-lg-4">
-              <img src="${curr_news.image}" alt="Broken Image">
-            </div>
-            <div class="col-12 col-sm-7 col-md-8 col-lg-8">
-              <a href="${curr_news.link} class="font-weight-bold">
+        <a href="${curr_news.link} class="font-weight-bold">
+          <div class="news_entry col-lg-10 offset-lg-1">
+            <div class="row">
+              <div class="col-12 col-sm-5 col-md-4 col-lg-4">
+                <img src="${curr_news.image}" alt="Broken Image">
+              </div>
+              <div class="col-12 col-sm-7 col-md-8 col-lg-8">
                 <div class="news_title">${curr_news.title}</div>
-              </a>
-              <p class="text-muted">${curr_news.author ? curr_news.author + " - " : "" } ${curr_news.date}</p>
+                <p>
+                  <span class="font-weight-bold">${curr_news.source}</span>
+                  <span class="text-muted"> - ${curr_news.author ? curr_news.author + " - " : "" } ${curr_news.date}</span>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     `;
   }
