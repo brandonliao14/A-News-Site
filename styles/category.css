@@ -2,3 +2,44 @@ body{
   background-color: #E9ECEF;
   font-family: 'Arvo', serif;
 }
+
+
+@media (min-width: 576px) {
+  body{
+    font-size: 90%;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body{
+    font-size: 95%;
+  }
+}
+
+@media (min-width: 890px) {
+  body{
+    font-size: 100%;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body{
+    font-size: 105%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body{
+    font-size: 107%;
+  }
+}
+
+/* On very small screen */
+@media (max-width: 575px) {
+
+}
