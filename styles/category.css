@@ -23,12 +23,18 @@ a:hover {
   line-height: 40px;
 }
 
+.nav-item:first-child{
+  min-width: 60px;
+  text-align: center;
+}
+
 .nav-item:hover{
   background-color: #E9ECEF !important;
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 20px;
+  font-family: 'Noticia Text', serif;
 }
 
 .navbar .navbar-brand{
