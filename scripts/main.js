@@ -61,8 +61,8 @@ function groupNewsFeed(list_of_news,category,number_of_entries){
 
 function templateCategoryHeadLine(news,category){
   return `
-    <a href="../news/${category}.html" class="text-uppercase text-center">
-      <div class="card-title">
+    <a href="../news/${category}.html" class="text-uppercase">
+      <div class="card-title h4">
         ${category}
       </div>
     </a>
