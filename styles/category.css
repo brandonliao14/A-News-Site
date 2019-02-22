@@ -63,7 +63,7 @@ a:hover {
 }
 
 .main_body_content .news_title{
-  font-size: 1.3em;
+  margin-bottom: 10px;
 }
 
 .text_shadow_wht{
@@ -72,7 +72,7 @@ a:hover {
 
 @media (min-width: 576px) {
   body{
-    font-size: 90%;
+    font-size: 100%;
   }
 
 }
@@ -80,13 +80,13 @@ a:hover {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body{
-    font-size: 95%;
+    font-size: 105%;
   }
 }
 
 @media (min-width: 890px) {
   body{
-    font-size: 100%;
+    font-size: 110%;
   }
 
 }
@@ -94,7 +94,11 @@ a:hover {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body{
-    font-size: 105%;
+    font-size: 115%;
+  }
+  .main_body_content .news_title{
+    font-size: 140% !important;
+    margin-bottom: 15px;
   }
 }
 
@@ -102,6 +106,10 @@ a:hover {
 @media (min-width: 1200px) {
   body{
     font-size: 107%;
+  }
+  .main_body_content .news_title{
+    font-size: 140% !important;
+    margin-bottom: 15px;
   }
 }
 
