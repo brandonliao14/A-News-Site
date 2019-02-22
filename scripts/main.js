@@ -1,7 +1,7 @@
 function main()
 {
   console.log('main.js script is loaded');
-  let path ="../news_feed.json";
+  let path ="news_feed.json";
 
   function readJSON(path) {
     return new Promise(function(resolve,reject){
