@@ -170,6 +170,11 @@ a.img_overlay:hover{
   font-weight: bold;
 }
 
+.card-title:hover{
+  color: gray;
+  text-decoration: underline;
+}
+
 .main_body .main_body_content .entry .news_date{
   color: gray;
   font-style: italic;
