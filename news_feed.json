@@ -35,9 +35,9 @@
 		{
 			"title": "The US keeps demanding actions on the yuan that China wants to take anyway",
 			"author": "Weizhen Tan",
-			"date": "Feb 21 2019 PT",
+			"date": "Feb 21, 2019 PT",
 			"link": "https://www.cnbc.com/2019/02/22/us-wants-a-more-stable-yuan-china-wants-that-too-experts.html",
-			"image": "https://www.cnbc.com/2019/02/22/us-wants-a-more-stable-yuan-china-wants-that-too-experts.html#",
+			"image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/08/08/105382838-1533704770705gettyimages-1004174496.530x298.jpeg?v=1550728118",
 			"source": "CNBC"
 		}
 	],
@@ -157,17 +157,17 @@
 			"link": "https://www.cnbc.com/2019/02/17/stocks-rally-on-us-china-trade-deal-but-bond-investors-fear-recession.html",
 			"image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/07/11/103779191-GettyImages-173274410.530x298.jpg?v=1544219696",
 			"source": "CNBC"
+		},
+		{
+			"title": "Singapore bank expects China slowdown to hit growth in loans",
+			"author": "Yen Nee Lee",
+			"date": "Feb 21, 2019 10:44pm PT",
+			"link": "https://www.cnbc.com/2019/02/22/ocbc-ceo-samuel-tsien-on-earnings-china-slowdown-impact-on-bank-loans.html",
+			"image": "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/02/13/104279793-GettyImages-634986436.530x298.jpg?v=1550816019",
+			"source": "CNBC"
 		}
 	],
 	"technology":[
-		{
-			"title": "5G networks: Trump says US shouldn't block technology",
-			"author": "",
-			"date": "February 21, 2019",
-			"link": "https://www.bbc.com/news/business-47327153",
-			"image": "https://ichef.bbci.co.uk/news/904/cpsprodpb/12B64/production/_105744667_gettyimages-1125050781.jpg",
-			"source": "BBC"
-		},
 		{
 			"title": "China moves firmly ahead with incentives to boost AI",
 			"author": "",
@@ -175,6 +175,14 @@
 			"link": "http://www.globaltimes.cn/content/1139167.shtml",
 			"image": "http://www.globaltimes.cn/Portals/0/attachment/2019/2019-02-17/10b5ef2f-d12b-430e-a76b-aa0f6070e45b.jpeg",
 			"source": "Global Times"
+		},
+		{
+			"title": "5G networks: Trump says US shouldn't block technology",
+			"author": "",
+			"date": "February 21, 2019",
+			"link": "https://www.bbc.com/news/business-47327153",
+			"image": "https://ichef.bbci.co.uk/news/904/cpsprodpb/12B64/production/_105744667_gettyimages-1125050781.jpg",
+			"source": "BBC"
 		},
 		{
 			"title": "New radar system installed at Chinese research base in Antarctica",
@@ -193,7 +201,7 @@
 			"source": "South China Morning Post"
 		},
 		{
-			"title": "https://www.scmp.com/tech/apps-social/article/2187225/chinas-social-media-queen-closes-wechat-account-13-million",
+			"title": "China’s ‘social media queen’ Mimeng closes WeChat account with 13 million followers after outrage over fake story",
 			"author": "Celia Chen",
 			"date": "Friday, 22 Feb, 2019 12:18pm",
 			"link": "https://www.scmp.com/tech/apps-social/article/2187225/chinas-social-media-queen-closes-wechat-account-13-million",
