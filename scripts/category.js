@@ -3,7 +3,8 @@ function autorun()
   console.log("category.js is loaded");
 
   let path ="https://hmliao14.github.io/A-News-Site/news_feed.json";
-  let category = window.location.pathname.split('/')[2].split('.')[0];
+  let paths = window.location.pathname.split('/');
+  let category = paths[paths.length-1].split('.')[0];
   let promise = readJSON(path);
   promise.then(function(data){
     console.log(data);
