@@ -25,15 +25,16 @@ function main()
     });
   }
   let promise = readJSON(path);
+  let number_of_entries = 3;
   promise.then(function(news_feed){
     let main_body_content = document.getElementsByClassName('main_body_content')[0];
     main_body_content.innerHTML =
-      groupNewsFeed(news_feed.finance, "finance",3) +
-      groupNewsFeed(news_feed.finance, "finance",4) +
-      groupNewsFeed(news_feed.finance, "finance",2) +
-      groupNewsFeed(news_feed.finance, "finance",4) +
-      groupNewsFeed(news_feed.finance, "finance",3) +
-      groupNewsFeed(news_feed.finance, "finance",2)
+      groupNewsFeed(news_feed.asia, "asia",number_of_entries) +
+      groupNewsFeed(news_feed.business, "business",4) +
+      groupNewsFeed(news_feed.economy, "economy",2) +
+      groupNewsFeed(news_feed.finance, "finance",number_of_entries) +
+      groupNewsFeed(news_feed.technology, "technology",number_of_entries) +
+      groupNewsFeed(news_feed.world, "world",number_of_entries)
   }).then().catch(function(err){
     console.log(err);
   })
