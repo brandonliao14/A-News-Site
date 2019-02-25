@@ -30,11 +30,6 @@ main .home_jumbotron .jumbotron_wrapper{
   line-height: 40px;
 }
 
-.nav-item:first-child{
-  min-width: 60px;
-  text-align: center;
-}
-
 .nav-item:hover{
   background-color: #E9ECEF !important;
 }
